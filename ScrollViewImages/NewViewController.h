@@ -10,4 +10,6 @@
 
 @interface NewViewController : UIViewController
 
+@property (nonatomic) UIImage *passedImage;
+
 @end

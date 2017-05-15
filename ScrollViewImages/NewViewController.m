@@ -10,7 +10,8 @@
 
 @interface NewViewController () <UIScrollViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIS
+@property (weak, nonatomic) IBOutlet UIScrollView *aScrollView;
+@property (nonatomic) UIImageView *aImageView;
 
 @end
 
@@ -18,13 +19,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    //self.imageView = [[UIImageView alloc]initWithImage:self.newImage];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.aScrollView setTranslatesAutoresizingMaskIntoConstraints:YES];
+    [self showDetails];
+}
+
+
+-(void)showDetails{
+    self.aImageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.aImageView = [[UIImageView alloc] initWithImage:self.passedImage];
+    [self.aScrollView addSubview:self.aImageView];
+    
+    self.aScrollView.contentSize = self.aImageView.bounds.size;
+    self.aScrollView.minimumZoomScale = 0.25;
+    self.aScrollView.maximumZoomScale = 4.0;
+    self.aScrollView.zoomScale = 1.0;
+}
+
+
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+    return self.aImageView;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+ Enable pinch-to-zoom:
+set the scroll view's minimum and maximum zoom scale.
+implement the UIScrollViewDelegate method viewForZoomingInScrollView: to tell the scroll view which view to zoom.
+*/
 
 /*
 #pragma mark - Navigation
