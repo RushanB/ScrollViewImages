@@ -11,6 +11,10 @@
 @interface ViewController () <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (nonatomic) UIImageView *image1;
+@property (nonatomic) UIImageView *image2;
+@property (nonatomic) UIImageView *image3;
+
 
 
 @end
@@ -21,7 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImageView *
+    
+    self.scrollView.delegate = self;
+    [UIImage imageNamed:@"Lighthouse-in-Field"];
+    [UIImage imageNamed:@"Lighthouse-night"];
+    [UIImage imageNamed:@"Lighthouse-zoomed"];
+    
+    NSArray *images = @[self.image1, self.image2, self.image3];
 }
 
 

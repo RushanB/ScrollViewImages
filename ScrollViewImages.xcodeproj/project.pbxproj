@@ -14,6 +14,7 @@
 		31131C541ECA21DD0061CE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31131C531ECA21DD0061CE7C /* Assets.xcassets */; };
 		31131C571ECA21DD0061CE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31131C551ECA21DD0061CE7C /* LaunchScreen.storyboard */; };
 		31131C5F1ECA28110061CE7C /* ScrollView-Images in Resources */ = {isa = PBXBuildFile; fileRef = 31131C5E1ECA28110061CE7C /* ScrollView-Images */; };
+		31131C621ECA2FB80061CE7C /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31131C611ECA2FB80061CE7C /* NewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		31131C561ECA21DD0061CE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31131C581ECA21DD0061CE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31131C5E1ECA28110061CE7C /* ScrollView-Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "ScrollView-Images"; sourceTree = SOURCE_ROOT; };
+		31131C601ECA2FB80061CE7C /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		31131C611ECA2FB80061CE7C /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				31131C4A1ECA21DC0061CE7C /* AppDelegate.h */,
 				31131C4B1ECA21DD0061CE7C /* AppDelegate.m */,
+				31131C601ECA2FB80061CE7C /* NewViewController.h */,
+				31131C611ECA2FB80061CE7C /* NewViewController.m */,
 				31131C4D1ECA21DD0061CE7C /* ViewController.h */,
 				31131C4E1ECA21DD0061CE7C /* ViewController.m */,
 				31131C501ECA21DD0061CE7C /* Main.storyboard */,
@@ -157,6 +162,7 @@
 				31131C4F1ECA21DD0061CE7C /* ViewController.m in Sources */,
 				31131C4C1ECA21DD0061CE7C /* AppDelegate.m in Sources */,
 				31131C491ECA21DC0061CE7C /* main.m in Sources */,
+				31131C621ECA2FB80061CE7C /* NewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

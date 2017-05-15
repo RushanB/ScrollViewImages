@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "598F0FFBD1717327A46DEA30683145C2B43994AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8512C21ECC5A8F757781E2FF28F01EB8E9BA5F1E" : 9223372036854775807,
+    "598F0FFBD1717327A46DEA30683145C2B43994AB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1E09A54A-501C-40CF-AC72-5F4F7AAA6F58",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8512C21ECC5A8F757781E2FF28F01EB8E9BA5F1E" : "ScrollViewImages\/ScrollView-Images\/",
+    "598F0FFBD1717327A46DEA30683145C2B43994AB" : "ScrollViewImages\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ScrollViewImages",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ScrollViewImages.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RushanB\/ScrollViewImages.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "598F0FFBD1717327A46DEA30683145C2B43994AB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lighthouse-labs\/ScrollView-Images.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8512C21ECC5A8F757781E2FF28F01EB8E9BA5F1E"
+    }
+  ]
+}
