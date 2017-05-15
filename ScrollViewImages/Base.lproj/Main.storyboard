@@ -21,12 +21,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dle-Ut-sOb">
-                                <rect key="frame" x="38" y="100" width="299" height="467"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dle-Ut-sOb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dle-Ut-sOb" secondAttribute="bottom" id="2S8-qc-C2j"/>
+                            <constraint firstAttribute="trailing" secondItem="dle-Ut-sOb" secondAttribute="trailing" id="SGa-uD-4W4"/>
+                            <constraint firstItem="dle-Ut-sOb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T8Q-Vx-KJx"/>
+                            <constraint firstItem="dle-Ut-sOb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oQi-hW-wNG"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="dle-Ut-sOb" id="KJa-Fq-yxg"/>

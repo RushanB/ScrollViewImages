@@ -13,7 +13,6 @@
 		31131C521ECA21DD0061CE7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31131C501ECA21DD0061CE7C /* Main.storyboard */; };
 		31131C541ECA21DD0061CE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31131C531ECA21DD0061CE7C /* Assets.xcassets */; };
 		31131C571ECA21DD0061CE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31131C551ECA21DD0061CE7C /* LaunchScreen.storyboard */; };
-		31131C5F1ECA28110061CE7C /* ScrollView-Images in Resources */ = {isa = PBXBuildFile; fileRef = 31131C5E1ECA28110061CE7C /* ScrollView-Images */; };
 		31131C621ECA2FB80061CE7C /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31131C611ECA2FB80061CE7C /* NewViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		31131C531ECA21DD0061CE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31131C561ECA21DD0061CE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31131C581ECA21DD0061CE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31131C5E1ECA28110061CE7C /* ScrollView-Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "ScrollView-Images"; sourceTree = SOURCE_ROOT; };
 		31131C601ECA2FB80061CE7C /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		31131C611ECA2FB80061CE7C /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +68,6 @@
 				31131C4D1ECA21DD0061CE7C /* ViewController.h */,
 				31131C4E1ECA21DD0061CE7C /* ViewController.m */,
 				31131C501ECA21DD0061CE7C /* Main.storyboard */,
-				31131C5E1ECA28110061CE7C /* ScrollView-Images */,
 				31131C531ECA21DD0061CE7C /* Assets.xcassets */,
 				31131C551ECA21DD0061CE7C /* LaunchScreen.storyboard */,
 				31131C581ECA21DD0061CE7C /* Info.plist */,
@@ -147,7 +144,6 @@
 			files = (
 				31131C571ECA21DD0061CE7C /* LaunchScreen.storyboard in Resources */,
 				31131C541ECA21DD0061CE7C /* Assets.xcassets in Resources */,
-				31131C5F1ECA28110061CE7C /* ScrollView-Images in Resources */,
 				31131C521ECA21DD0061CE7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

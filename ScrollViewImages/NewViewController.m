@@ -27,19 +27,19 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [self.aScrollView setTranslatesAutoresizingMaskIntoConstraints:YES];
-    [self showDetails];
+    [self showDetails]; //show details
 }
 
 
 -(void)showDetails{
-    self.aImageView.contentMode = UIViewContentModeScaleAspectFit;
-    self.aImageView = [[UIImageView alloc] initWithImage:self.passedImage];
+    self.aImageView.contentMode = UIViewContentModeScaleAspectFit; //aspect fit
+    self.aImageView = [[UIImageView alloc] initWithImage:self.passedImage]; //gets passed image
     [self.aScrollView addSubview:self.aImageView];
     
-    self.aScrollView.contentSize = self.aImageView.bounds.size;
-    self.aScrollView.minimumZoomScale = 0.25;
-    self.aScrollView.maximumZoomScale = 4.0;
-    self.aScrollView.zoomScale = 1.0;
+    self.aScrollView.contentSize = self.aImageView.bounds.size; //sets bounds
+    self.aScrollView.minimumZoomScale = 0.25;  //min zoom scale
+    self.aScrollView.maximumZoomScale = 4.0;   //max zoom scale
+    self.aScrollView.zoomScale = 1.0;   //default zoom scale
 }
 
 
