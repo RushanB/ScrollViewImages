@@ -26,6 +26,7 @@
 
 @implementation ViewController
 
+#pragma mark VIEWS
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,7 +36,6 @@
     //[UIImage imageNamed:@"Lighthouse-night"];
     //[UIImage imageNamed:@"Lighthouse-zoomed"];
     //NSArray *images = @[self.image1, self.image2, self.image3];
- 
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -44,6 +44,7 @@
     [self setupScrollForPaging]; //page scrolling
 }
 
+#pragma mark IMAGES
 
 -(NSArray<UIImage *> *)images{
     return @[[UIImage imageNamed:@"Lighthouse-in-Field"],
@@ -51,6 +52,7 @@
              [UIImage imageNamed:@"Lighthouse-zoomed"]];
 }
 
+#pragma mark PAGING
 
 -(void)setupScrollForPaging{ 
     CGFloat width = CGRectGetWidth(self.scrollView.frame);
@@ -65,18 +67,35 @@
 
         imageView.userInteractionEnabled = YES;  //UI enabled
         [self.scrollView addSubview:imageView];
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
+        [imageView addGestureRecognizer:tapGesture];
     }];
+    
     self.scrollView.contentSize = CGSizeMake(self.images.count*width,height); //sets scroll content size
     self.scrollView.pagingEnabled = YES;
     
 }
+
+#pragma mark SEGUE
 
 -(IBAction)tapped:(UITapGestureRecognizer *)sender{  //when tapped on image
     CGPoint location = [sender locationInView:self.scrollView];
     UIImageView *imageView = (UIImageView *)[self.scrollView hitTest:location withEvent:nil];
     
     if([imageView isKindOfClass:[UIImageView class]]){
-        [self performSegueWithIdentifier:@"showDetails" sender:imageView.image];
+        
+        // 1. Instantiate viewcontroller from storyboard
+        // Get main storyboard
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        // Get new view controller
+        NewViewController *nvc = [storyboard instantiateViewControllerWithIdentifier:@"NewViewController"];
+        nvc.passedImage = ((UIImageView *)sender.view).image;
+        
+        // Navigate to new view controller
+        [self.navigationController pushViewController:nvc animated:YES];
+        
+       // [self performSegueWithIdentifier:@"showDetails" sender:imageView.image];
     }
 }
 

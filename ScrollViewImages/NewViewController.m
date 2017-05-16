@@ -30,6 +30,7 @@
     [self showDetails]; //show details
 }
 
+#pragma mark SHOWDETAILS
 
 -(void)showDetails{
     self.aImageView.contentMode = UIViewContentModeScaleAspectFit; //aspect fit
@@ -42,6 +43,7 @@
     self.aScrollView.zoomScale = 1.0;   //default zoom scale
 }
 
+#pragma mark ZOOMINGINSCROLLVIEW
 
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
     return self.aImageView;
